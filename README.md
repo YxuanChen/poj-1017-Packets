@@ -12,7 +12,7 @@ The input file consists of several lines specifying orders. Each line specifies 
 
 **Output**
 
-The output file contains one line for each line in the input file. This line contains the minimal number of parcels into which the order from the corresponding line of the input file can be packed. There is no line in the output file corresponding to the last ``null'' line of the input file.
+The output file contains one line for each line in the input file. This line contains the minimal number of parcels into which the order from the corresponding line of the input file can be packed. There is no line in the output file corresponding to the last “null” line of the input file.
 
 **Sample Input**
 
@@ -25,10 +25,10 @@ The output file contains one line for each line in the input file. This line con
 2<br> 
 1<br> 
 
-这是一道贪心算法，思想很简单，每次从最大的先放，依次放入，2*2包裹和1*1包裹是用来填补空位的。<br>
-6*6：一个包裹最多只能放入1个；<br>
-5*5：一个包裹最多只能放入1个、剩余的只能用1*1来填充；<br>
-4*4：一个包裹最多只能放入1个，剩余可用5个2*2填充，不足5个用1*1填充；<br>
-3*3：一个包裹最多只能放入4个，不满四个用2*2和1*1填充（这里需要判断3*3包裹个数，个数不同余下的空位可用2*2填充的个数也不同）；<br>
-2*2：判断是否比可利用空间的个数多，多则需要增加包裹数量；<br>
-1*1：同2*2；<br>
+这是一道贪心算法，思想很简单，每次从最大的先放，依次放入，2\*2包裹和1\*1包裹是用来填补空位的。<br>
+6\*6：一个包裹最多只能放入1个；<br>
+5\*5：一个包裹最多只能放入1个、剩余的只能用1\*1来填充；<br>
+4\*4：一个包裹最多只能放入1个，剩余可用5个2\*2填充，不足5个用1\*1填充；<br>
+3\*3：一个包裹最多只能放入4个，不满四个用2\*2和1\*1填充（这里需要判断3\*3包裹个数，个数不同余下的空位可用2\*2填充的个数也不同）；<br>
+2\*2：判断是否比可利用空间的个数多，多则需要增加包裹数量；<br>
+1\*1：同2\*2；<br>
